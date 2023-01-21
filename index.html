@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<script>
+	function entrar(){
+		document.getElementById("navegador").classList.toggle("menu")
+		document.getElementById("fondo").classList.toggle("mostrado")
+	}
+
+</script>
+<style>
+	body{
+	margin:0;
+	padding: 0;
+}
+
+#contenedor{width: 100%;margin: 0 auto;}
+
+header{
+	width: 100%;
+	height: 150px;
+	background-color: white;
+	float: left;
+}
+h1{
+	color: black;
+	text-align: center;
+	font-size:36px;
+	margin-top: 55px;
+}
+.fa{
+ 	display: none !important;
+
+ 	}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: red;
+	float: left;
+}
+
+	ul{
+		list-style: none;
+		font-size: 0;
+		
+
+	}
+	li{display: inline-block;
+		width: 25%;
+		color: white;
+		margin-top: 32px;
+		font-size: 24px;
+		text-align: center;
+	}
+section{
+	float: left;
+	background-color: pink;
+
+}
+p{font-size: 20px;
+font-family: Arial;}
+
+footer{width: 100%;
+height: 200px;
+background-color:black;
+float: left;
+}
+
+@media screen and (max-width: 640px){
+	header{position: fixed;
+		top: 0;
+		left: 0;
+		background: yellow;
+		z-index: 10;
+
+	}
+	.fa{display: block !important;		
+		position: fixed;
+		top:10px;
+		left: 10px;
+		font-size: 40px;
+		cursor: pointer;
+		background: orange;
+		border-radius: 50px;
+		width: 50px;height: 50px;
+		text-align: center;
+		}
+	nav{position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 1000px;
+	overflow: hidden;
+    left: -300px;
+	transition:1s;
+	z-index: 100;}
+
+	ul li{display: block;}
+
+
+	section{margin-top: 150px;}
+	
+	#navegador.menu{left:0;	}
+	
+	#fondo.mostrado{
+		width: 100%;
+		height: 1000px;
+		z-index: 99;
+		background-color: rgba(0,0,0,0.5);
+		position: fixed;
+
+	}
+
+	}
+
+
+</style>
+</head>
+<body>
+	<div id="contenedor">
+		
+	<div id="fondo" onclick="entrar()">
+		
+	</div>
+		<header>
+			<h1>Titulo</h1>
+			<span onclick="entrar()" class="fa">:::</span>
+			
+		</header><!-- /header -->
+		<nav id="navegador">
+			<ul>
+				<li>Noticias</li>
+				<li>Horarios</li>
+				<li>Contacto</li>
+				<li>Redes Sociales</li>
+			</ul>
+		</nav>
+		
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium <em>veniam ab totam reprehenderit</em> natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab laboriosam, voluptatibus libero accusantium nisi ipsa cumque, iusto deserunt quas vero quisquam delectus aliquid autem veritatis! Illo nobis beatae earum eius. Quasi, autem nesciunt, asperiores dicta natus tempora optio. Soluta aut sunt sequi voluptatum aliquid, fuga accusamus. Error cupiditate unde, facere tenetur? Nisi harum recusandae accusantium voluptas nobis fugiat at nulla asperiores laudantium, obcaecati omnis, quos maiores odio placeat nemo corrupti doloribus temporibus totam. Asperiores reiciendis deleniti sed ea molestias vero tempore eveniet adipisci blanditiis dolor earum modi delectus esse et totam unde, doloremque ex. Ut expedita rem dolores nostrum explicabo.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quaerat, sunt quibusdam, voluptate a itaque culpa, ratione magni aut quam cum asperiores. Animi porro, incidunt velit dolores laudantium vero error tempora. Fugiat modi aliquid odio, molestias ut illum. Rem incidunt quod at ipsum debitis voluptas ex natus laudantium porro molestias, nihil, explicabo veniam, blanditiis impedit tenetur temporibus. Minus mollitia, animi. Perspiciatis facere eveniet natus quidem esse repudiandae temporibus reprehenderit, laborum, dolore, culpa, voluptates aliquid optio explicabo ut! Corporis suscipit, natus, quasi pariatur minus molestias similique quod aspernatur iste voluptate enim, a velit voluptatem dolorum ut doloribus incidunt odio quaerat. Odit nisi eligendi delectus, expedita soluta inventore aspernatur beatae dolores, facilis, consequuntur corporis minima voluptate earum, nihil excepturi eos incidunt nostrum perspiciatis similique repudiandae repellendus cupiditate hic. Facilis cumque soluta, aperiam ab repellat incidunt ex non placeat neque deleniti nostrum error inventore alias quisquam animi laudantium quia molestias. Quia molestiae inventore autem excepturi commodi soluta nesciunt porro saepe voluptatem aut. Asperiores debitis ipsam repudiandae eaque eum nostrum necessitatibus dolores harum, tempore expedita assumenda nisi corporis accusamus laborum voluptate doloremque odio ut ducimus neque molestiae minima veritatis consequuntur! Ullam consequuntur, tempore magnam sapiente rerum quisquam reprehenderit ex fuga ab id architecto blanditiis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laboriosam facilis porro sed tempore tenetur blanditiis nobis voluptate possimus repudiandae cumque odio sit nemo ut, consequuntur aspernatur, sint corporis? Nemo porro, nobis perferendis nam deserunt ipsa ipsam ipsum eum sit quia eaque rerum fugit nostrum iste asperiores eos fuga velit accusantium laboriosam vitae architecto earum repellat! Delectus earum nesciunt sint. Aspernatur, itaque! Vitae excepturi tempore veritatis, corrupti quod recusandae quibusdam nihil beatae! Nihil provident aperiam mollitia. Ea obcaecati consequatur labore, aut, culpa voluptates, debitis dignissimos laudantium veniam rem sapiente beatae quam modi excepturi. Deleniti inventore neque harum possimus veniam iure, eveniet, dignissimos unde magni ipsum excepturi quod totam. Similique, temporibus hic, nobis fugit vitae praesentium quisquam deleniti vel, aliquid sapiente sit quia tenetur sed est molestias mollitia iste. A error animi laboriosam repudiandae cupiditate, eos perferendis nesciunt ea odit veritatis? Nulla earum autem est odit laboriosam aliquid reprehenderit consequatur hic in sunt aut ut doloremque dolorum quis explicabo quia maxime ad quasi ex, tempore repellendus porro suscipit, ratione nesciunt! Sunt placeat rerum repellat numquam necessitatibus. Minima magni distinctio eum saepe corporis reiciendis accusantium ex earum voluptatum! Aliquam atque, explicabo vel quis quibusdam recusandae magni laborum pariatur aspernatur fugiat, enim nulla voluptatum, repellat blanditiis? Aperiam quaerat, voluptate, quia iure sunt dicta dolore minima mollitia quidem fugiat quasi sapiente voluptatibus alias blanditiis quas animi vero, laborum qui earum. Sint, deleniti cum hic voluptates, rem fugit. Eveniet, explicabo facilis! Explicabo odit deserunt id enim ipsum vitae et, cumque ex distinctio molestiae voluptatibus voluptates amet suscipit, aliquam architecto sit, debitis provident veniam ipsam. Voluptatem sint, officia quae, odio molestiae ab aliquid, tempore molestias hic nihil sapiente animi perspiciatis aspernatur voluptates. Odio delectus, nostrum deleniti rerum praesentium minus sed suscipit accusamus, eveniet quam ut vitae modi, cumque repellendus ex commodi voluptatum placeat reprehenderit saepe. Aspernatur.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perspiciatis laudantium veniam ab totam reprehenderit natus in, aliquid beatae temporibus quaerat, quasi tempore, provident, expedita inventore assumenda harum sunt sint.</p>
+		</section>
+
+		<footer>
+			
+		</footer>
+</div>
+</body>
+
+</html>
